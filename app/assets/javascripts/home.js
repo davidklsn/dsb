@@ -51,4 +51,25 @@ $(document).ready(function(){
       'top': 0
     }, {duration: 'slow'});
   }
+
+  //popup hosts
+
+  $('.image-container').on('click', function(e){
+    e.preventDefault();
+    var id = $(this).attr('id');
+
+    $('.overlay').removeClass('hidden');
+    $('#' + id).removeClass('hidden');
+  });
+
+  $('.close').on('click', function(e){
+    e.preventDefault();
+    var string = $(this).attr('id');
+    var id = string.substr(0, string.indexOf('-'));
+    console.log(id);
+    
+    $('.overlay').addClass('hidden');
+    $('#' + id).addClass('hidden');
+  });
+  
 });
