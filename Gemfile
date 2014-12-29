@@ -41,3 +41,4 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'sorcery'
 gem 'rails_12factor', group: :production
 gem "jquery-scrollto-rails"
+gem 'fancybox-rails'

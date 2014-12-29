@@ -22,5 +22,6 @@ module Dsb
     config.serve_static_assets = true
     config.assets.enabled = true  
     config.assets.paths << "#{Rails.root}/app/assets/fonts"  
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
   end
 end

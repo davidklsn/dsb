@@ -1,7 +1,10 @@
 $(document).ready(function(){
+  jQuery(function() {
+    $("a.fancybox").fancybox();
+  });
+
   function goToByScroll(id){
     // Scroll
-    console.log(id);
     $('html, body').animate({ scrollTop: $('#' + id).offset().top }, 'slow');
   }
 
@@ -10,11 +13,6 @@ $(document).ready(function(){
     goToByScroll($(this).attr('class'));   
   });
 
-  //Hide groups for animation privacy 
-  //$('.init-hide').toggleClass('hidden');
-
-  // @TODO Create animations for front and menu
-  
   $('#group1').fadeIn('slow').animate({
     'opacity': 1
     },
@@ -46,11 +44,9 @@ $(document).ready(function(){
       }, { duration: 2000, complete: function() { dropDownMenu(); } } );
   }
   
-
   function dropDownMenu(){
     $('.menu').animate({
       'top': 0
     }, {duration: 'slow'});
   }
-  
 });

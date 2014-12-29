@@ -194,41 +194,81 @@
   
 
 // FRONT
-  .and, .name{
-    margin: 0;
-    position: relative;
-    padding: 0; 
-    margin-top: -70px;
-    opacity: 0;
+.and, .name{
+  margin: 0;
+  position: relative;
+  padding: 0; 
+  margin-top: -70px;
+  opacity: 0;
+}
+
+.and{
+  font-family: 'Canter';
+  font-size: 100px;
+  font-weight: normal;
+  z-index: 10;
+  margin-top: -53px;
+}
+
+.name{
+  z-index: 100;
+}
+
+.arrow{
+  position: absolute;
+  top: 17px;
+  width: 50px;
+  vertical-align: middle;   
+}
+
+.arrow#left{
+  left: -200px;
+  opacity: 0;
+}
+
+.arrow#right{
+  right: -200px;
+  opacity: 0;
+}
+
+// content groups
+#group2 .title{
+  font-family: 'Baron';
+}
+
+#group2 .images{
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+
+  a{
+    overflow: hidden;
+    height: 81px;
+    width: 100px;
+    display: inline-block;
+    border: 3px solid $green;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  img{
+    width: 140px;
+    display: none;
   }
 
-  .and{
-    font-family: 'Canter';
-    font-size: 100px;
-    font-weight: normal;
-    z-index: 10;
-    margin-top: -53px;
+  a:hover{
+    img{
+      display: block;
+    }
   }
+}
 
-  .name{
-    z-index: 100;
-  }
- 
-  .arrow{
-    position: absolute;
-    top: 17px;
-    width: 50px;
-    vertical-align: middle;   
-  }
 
-  .arrow#left{
-    left: -200px;
-    opacity: 0;
-  }
 
-  .arrow#right{
-    right: -200px;
-    opacity: 0;
-  }
+
+
+
+
+
 
 
