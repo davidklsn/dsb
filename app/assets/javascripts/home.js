@@ -53,13 +53,16 @@ $(document).ready(function(){
   }
 
   //popup hosts
-
   $('.image-container').on('click', function(e){
     e.preventDefault();
     var id = $(this).attr('id');
 
     $('.overlay').removeClass('hidden');
     $('#' + id).removeClass('hidden');
+    $('#' + id).find('.text').animate({
+      'opacity': 1
+    }, { duration: 1500 })
+
     $('html, body').animate({ scrollTop: $('#group2').offset().top }, 'slow');
   });
 
@@ -67,10 +70,13 @@ $(document).ready(function(){
     e.preventDefault();
     var string = $(this).attr('id');
     var id = string.substr(0, string.indexOf('-'));
-    console.log(id);
+
+    $('#' + id).addClass('hidden');
+
+    $('.text').css('opacity', '0');
+
     
     $('.overlay').addClass('hidden');
-    $('#' + id).addClass('hidden');
   });
   
 });

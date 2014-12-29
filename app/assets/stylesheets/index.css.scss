@@ -255,7 +255,7 @@
 #group2 .images{
   width: 100%;
   height: auto;
-  margin-top: 40px;
+  margin-top: 24px;
 
   a{
     overflow: hidden;
@@ -374,6 +374,10 @@
     outline:0 !important;
   }
 
+  input:focus{
+    outline:0 !important;
+  }
+
   input{
     margin-bottom: 20px;
   }
@@ -487,6 +491,7 @@
       width: 360px;
       margin-left: 50px;
       margin-top: 30px;
+      opacity: 0;
     }
 
   }
