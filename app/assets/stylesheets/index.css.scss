@@ -40,6 +40,7 @@
   a:hover {
     background-color: rgba(189,189,189, 0.8);
   }
+
   a.active{
     background-color: rgba(189,189,189, 0.8);
     color: black;
@@ -150,9 +151,15 @@
     font-family: 'Canter'; 
   }
 
-  .content p{
+  .content p, .content a{
     font-family: 'Baron';
     font-size: 16px;
+  }
+
+  .content a{
+    font-family: 'Canter';
+    font-size: 26px;
+    color: black;
   }
  
   #group1 {
