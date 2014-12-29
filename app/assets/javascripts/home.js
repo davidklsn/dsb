@@ -60,6 +60,7 @@ $(document).ready(function(){
 
     $('.overlay').removeClass('hidden');
     $('#' + id).removeClass('hidden');
+    $('html, body').animate({ scrollTop: $('#group2').offset().top }, 'slow');
   });
 
   $('.close').on('click', function(e){
