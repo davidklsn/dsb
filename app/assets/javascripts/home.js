@@ -13,11 +13,20 @@ $(document).ready(function(){
   //Hide groups for animation privacy 
   //$('.init-hide').toggleClass('hidden');
 
+  //
   // @TODO Create animations for front and menu
-  $('.name').fadeIn('slow').animate({
-    'opacity': 1,
+  
+  $('#group1').fadeIn('slow').animate({
+    'opacity': 1
     },
-    { duration: 2000, complete: function() { fadeInAnd(); } });
+    { duration: 2000, complete: function() { fadeInNames(); } });
+
+  function fadeInNames(){
+    $('.name').fadeIn('slow').animate({
+      'opacity': 1,
+      },
+      { duration: 2000, complete: function() { fadeInAnd(); } });
+  }
 
   function fadeInAnd(){
     $('.and').fadeIn('slow').animate({
@@ -42,7 +51,7 @@ $(document).ready(function(){
   function dropDownMenu(){
     $('.menu').animate({
       'top': 0
-    }, {duration: 'fast'});
+    }, {duration: 'slow'});
   }
   
 });
