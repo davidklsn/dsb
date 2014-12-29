@@ -26,14 +26,14 @@
       width: 100px;
       text-decoration: none;
       color: white;
-      background-color: purple;
+      background-color: rgba(99,99,99, 0.7);
       padding: 0.2em 0.6em;
       border-right: 1px solid white;
       text-align: center;
   }
 
   a:hover {
-      background-color: fuchsia;
+      background-color: rgba(189,189,189, 0.7);
   }
 
   li {
@@ -132,10 +132,11 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-  
+ 
   #group1 {
     z-index: 5; /* slide over group 2 */
   }
+
   #group1 .parallax__layer--base {
     background: white;
     background-image: image_url('background.jpeg');
@@ -146,42 +147,29 @@
   #group2 {
     z-index: 3; /* slide under groups 1 and 3 */
   }
-  #group2 .parallax__layer--back {
-    background: rgb(123,210,102);
+  #group2 {
+    background: $orange;
   }
 
   #group3 {
     z-index: 4; /* slide over group 2 and 4 */
   }
-  #group3 .parallax__layer--base {
-    background: rgb(153,216,101);
+  #group3 {
+    background: $green;
+
   }
 
   #group4 {
     z-index: 2; /* slide under group 3 and 5 */
   }
-  #group4 .parallax__layer--deep {
-    background: rgb(184,223,101);
+  #group4 {
+    background: $red;
   }
 
   #group5 {
     z-index: 3; /* slide over group 4 and 6 */
   }
-  #group5 .parallax__layer--base {
+  #group5 {
     background: rgb(214,229,100);
-  }
-
-  #group6 {
-    z-index: 2; /* slide under group 5 and 7 */
-  }
-  #group6 .parallax__layer--back {
-    background: rgb(245,235,100);
-  }
-
-  #group7 {
-    z-index: 3; /* slide over group 7 */
-  }
-  #group7 .parallax__layer--base {
-    background: rgb(255,241,100);
   }
   

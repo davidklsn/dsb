@@ -1,17 +1,14 @@
 $(document).ready(function(){
-  console.log('javascript');
 
-  $(".menu a").click(function() {
-    var id = '#' + $(this).attr('class');
-    console.log(id);
+  function goToByScroll(id){
+    // Scroll
+    $('html, body').animate({ scrollTop: $('#group2').offset().top }, 'slow');
+  }
 
-    $('html, body').animate({
-        scrollTop: $('#kuk').offset().top
-    }, 2000);
-
-    $('.init-hide').toggleClass('hidden');
+  $(".menu a").click(function(e) {
+    e.preventDefault();
+    goToByScroll($(this).attr('class'));   
   });
-
 
   // @TODO Create animations for front and menu
   //
