@@ -2,7 +2,8 @@ $(document).ready(function(){
 
   function goToByScroll(id){
     // Scroll
-    $('html, body').animate({ scrollTop: $('#group2').offset().top }, 'slow');
+    console.log(id);
+    $('html, body').animate({ scrollTop: $('#' + id).offset().top }, 'slow');
   }
 
   $(".menu a").click(function(e) {
@@ -10,6 +11,9 @@ $(document).ready(function(){
     goToByScroll($(this).attr('class'));   
   });
 
+  //Hide groups for animation privacy 
+  //$('.init-hide').toggleClass('hidden');
+
   // @TODO Create animations for front and menu
-  //
+  
 });
