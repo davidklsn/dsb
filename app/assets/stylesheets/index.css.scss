@@ -261,6 +261,38 @@
   }
 }
 
+#group2{
+  .content{
+    width: 641px;
+  }
+
+  .hosts{
+    .image-container{
+      float: left;
+      width: 200px;
+      height: 300px;
+      margin-right: 20px;
+    }
+
+    .image-container:last-child{
+      margin-right: 0px;
+    }
+
+    a{
+      overflow: hidden;
+      height: 200px;
+      width: 200px;
+      display: inline-block;
+      cursor: pointer;
+      background-color: gray;
+    }
+
+    img{
+      widht: 200px;
+    }
+  }
+}
+
 
 
 
