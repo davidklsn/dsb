@@ -161,6 +161,10 @@
     font-size: 26px;
     color: black;
   }
+
+  .content a:hover{
+    color: gray;
+  }
  
   #group1 {
     z-index: 5; /* slide over group 2 */
@@ -213,11 +217,11 @@
 }
 
 .and{
-  font-family: 'Canter';
+  font-family: 'Baron';
   font-size: 100px;
   font-weight: normal;
   z-index: 10;
-  margin-top: -53px;
+  margin-top: -56px;
 }
 
 .name{
@@ -249,7 +253,7 @@
 #group2 .images{
   width: 100%;
   height: auto;
-  margin-top: 50px;
+  margin-top: 40px;
 
   a{
     overflow: hidden;
@@ -257,18 +261,15 @@
     width: 100px;
     display: inline-block;
     cursor: pointer;
-    background-color: gray;
+    opacity: 0.5
   }
   
   img{
     width: 140px;
-    display: none;
   }
 
   a:hover{
-    img{
-      display: block;
-    }
+    opacity: 1;
   }
 }
 
@@ -329,12 +330,90 @@
   }
 }
 
+#group4{
+  form{
+    margin-top: 20px;
+  }
+  textarea, input{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Baron';
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */  resize: none;
+  }
+
+  textarea:focus{
+    outline:0 !important;
+  }
+
+  input{
+    margin-bottom: 20px;
+  }
+}
 
 
-
-
-
-
-
-
-
+.button {
+  border: 0 none;
+  border-radius: 2px 2px 2px 2px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Baron';
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  padding: 7px 10px;
+  text-transform: none;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  width: 16.795%; /* auto */
+  text-align: center; /* DELETE WHEN WIDTH AUTO */
+  &.red {
+    background: none repeat scroll 0 0 $red;
+    color: $white;
+    &:hover {
+      background: none repeat scroll 0 0 $light;
+      color: $white;
+    }
+  }
+  &.dark {
+    background: none repeat scroll 0 0 $dark;
+    color: $white;
+    &:hover {
+      background: none repeat scroll 0 0 $blue;
+      color: $white;
+    }
+  }
+  &.light {
+    background: none repeat scroll 0 0 $light;
+    color: $white;
+    &:hover {
+      background: none repeat scroll 0 0 $dark;
+      color: $white;
+    }
+  }
+  &.green {
+    background: none repeat scroll 0 0 $green;
+    color: $white;
+    &:hover {
+      background: none repeat scroll 0 0 $dark;
+      color: $white;
+    }
+  }
+  &.blue {
+    background: none repeat scroll 0 0 $blue;
+    color: $white;
+    &:hover {
+      background: none repeat scroll 0 0 $dark;
+      color: $white;
+    }
+  }
+}

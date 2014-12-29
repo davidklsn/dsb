@@ -1,6 +1,6 @@
 class CreateAttendanceTable < ActiveRecord::Migration
   def change
-    create_table :attendance do |t| 
+    create_table :attendances do |t|
       t.string :body
       t.integer :attending
     end

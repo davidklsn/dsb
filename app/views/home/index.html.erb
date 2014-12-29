@@ -13,7 +13,7 @@
       <div class="content">
         <%= image_tag 'arrow-left.png', class: 'arrow', id: 'left' %>
         <h1 class='name'>Sara</h1>
-        <h3 class='and'>&</h3>
+        <h3 class='and'>∞</h3>
         <h1 class='name'>David</h1>
         <%= image_tag 'arrow-right.png', class: 'arrow', id: 'right' %>
         <img></img>
@@ -75,7 +75,12 @@ Om du ändå vill ge en gåva kan du välja mellan att ge ett bidrag till vår b
   </div>
   <div id="group4" class="parallax__group init-hide">
     <div class="content">
-      <h1 class='title'>anmälan</h1>
+      <p>Hej! Här anmäler du dig till bröllopet. Skriv fullständiga namn på samtliga i sällskapet. Skriv med eventuella allergier och annat vi kan behöva veta!</p>
+      <%= form_for @attendance, url: { action: "create" }, html: { class: "nifty_form" }, remote: true do |f| %>
+        <%= f.text_field :email, placeholder: 'Email' %>
+        <%= f.text_area :body, size: "60x12", placeholder: 'Deltagare & Info' %>
+        <%= f.submit "Anmäl", class: 'button light center' %>
+      <% end %>
     </div>
   </div>
 
