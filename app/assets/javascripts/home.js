@@ -25,14 +25,14 @@ $(document).ready(function(){
     $('.name').fadeIn('slow').animate({
       'opacity': 1,
       },
-      { duration: 2000, complete: function() { fadeInAnd(); } });
+      { duration: 2000, complete: function() { fadeInAnd(); fadeInArrows(); } });
   }
 
   function fadeInAnd(){
     $('.and').fadeIn('slow').animate({
       'opacity': 0.3
       },
-      { duration: 2000, complete: function() { fadeInArrows(); } });
+      { duration: 2000, complete: function() {  } });
   }
   
   function fadeInArrows(){    
