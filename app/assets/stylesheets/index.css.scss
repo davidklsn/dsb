@@ -1,3 +1,36 @@
+.menu{
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  margin: 0 auto;
+
+  ul {
+    width: 481px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    margin: 0 auto;
+  }
+
+  a {
+      float: left;
+      width: 100px;
+      text-decoration: none;
+      color: white;
+      background-color: purple;
+      padding: 0.2em 0.6em;
+      border-right: 1px solid white;
+      text-align: center;
+  }
+
+  a:hover {
+      background-color: fuchsia;
+  }
+
+  li {
+      display: inline;
+  }
+}
 .index{
   .container{
     width: 765px;
