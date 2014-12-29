@@ -263,15 +263,35 @@
 
 #group2{
   .content{
-    width: 641px;
+    width: 780px;
   }
 
   .hosts{
+    width: 641px;
+    margin: 0 auto;
+
     .image-container{
+      position: relative;
       float: left;
       width: 200px;
       height: 300px;
       margin-right: 20px;
+
+      p{
+        position: absolute;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        color: white;
+      }
+
+      p.first-name{
+        top: 60px;
+      }
+
+      p.last-name{
+        top: 80px;
+      }
     }
 
     .image-container:last-child{
@@ -279,7 +299,6 @@
     }
 
     a{
-      overflow: hidden;
       height: 200px;
       width: 200px;
       display: inline-block;
@@ -288,7 +307,13 @@
     }
 
     img{
-      widht: 200px;
+      width: 200px;
+      height: 200px;
+      opacity: 0.6;
+    }    
+
+    img:hover{
+      opacity: 1;
     }
   }
 }
