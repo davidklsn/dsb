@@ -285,7 +285,7 @@
       position: relative;
       float: left;
       width: 200px;
-      height: 300px;
+      height: 200px;
       margin-right: 20px;
 
       p{
@@ -294,6 +294,7 @@
         width: 100%;
         text-align: center;
         color: white;
+        display: none;
       }
 
       p.first-name{
@@ -303,11 +304,34 @@
       p.last-name{
         top: 80px;
       }
+
+      .shader{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.6;
+        background-color: black;
+      }
     }
 
     .image-container:last-child{
       margin-right: 0px;
     }
+    
+    .image-container:hover{
+      p{
+        display: block;
+      }
+      img{
+        opacity: 1;
+      }
+      .shader{
+        display: block;
+      }
+    }
+
 
     a{
       height: 200px;
@@ -322,10 +346,6 @@
       height: 200px;
       opacity: 0.6;
     }    
-
-    img:hover{
-      opacity: 1;
-    }
   }
 }
 
