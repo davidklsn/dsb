@@ -32,4 +32,4 @@ group :development do
 end
 
 gem 'sass-rails', '~> 4.0.3'
-
+gem 'scrollmagicjs-rails'

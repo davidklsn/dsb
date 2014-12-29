@@ -13,4 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require greensock/TweenMax.min
+//= require jquery.scrollmagic
 //= require_tree .
