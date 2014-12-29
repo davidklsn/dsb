@@ -11,6 +11,8 @@ $(document).ready(function(){
   $(".menu a").click(function(e) {
     e.preventDefault();
     goToByScroll($(this).attr('class'));   
+    $('.menu a').removeClass('active');
+    $(this).addClass('active');
   });
 
   $('#group1').fadeIn('slow').animate({
