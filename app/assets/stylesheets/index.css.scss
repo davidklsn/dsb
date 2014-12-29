@@ -9,7 +9,7 @@
   position: fixed;
   z-index: 1000;
   width: 100%;
-  top: 0;
+  top: -39px;
   margin: 0 auto;
   font-family: 'Canter';
   font-size: 20px;
@@ -138,13 +138,15 @@
     transform: translate(-50%, -50%);
   }
 
-  h3{
-    //font-family: 'Canter';
+  h1{
+    font-family: 'Canter';
   }
 
-  h1{
-    //font-family: 'Castro';
+  h3{
+    font-family: 'Canter';
+    
   }
+
 
   .content p{
     font-family: 'Baron';
@@ -191,3 +193,43 @@
     background: rgb(214,229,100);
   }
   
+
+// FRONT
+  .and, .name{
+    margin: 0;
+    position: relative;
+    padding: 0; 
+    margin-top: -70px;
+    opacity: 0;
+  }
+
+  .and{
+    font-family: 'Canter';
+    font-size: 100px;
+    font-weight: normal;
+    z-index: 10;
+    margin-top: -53px;
+  }
+
+  .name{
+    z-index: 100;
+  }
+ 
+  .arrow{
+    position: absolute;
+    top: 17px;
+    width: 50px;
+    vertical-align: middle;   
+  }
+
+  .arrow#left{
+    left: -200px;
+    opacity: 0;
+  }
+
+  .arrow#right{
+    right: -200px;
+    opacity: 0;
+  }
+
+

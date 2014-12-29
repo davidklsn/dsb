@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
   function goToByScroll(id){
     // Scroll
     console.log(id);
@@ -15,5 +14,35 @@ $(document).ready(function(){
   //$('.init-hide').toggleClass('hidden');
 
   // @TODO Create animations for front and menu
+  $('.name').fadeIn('slow').animate({
+    'opacity': 1,
+    },
+    { duration: 2000, complete: function() { fadeInAnd(); } });
+
+  function fadeInAnd(){
+    $('.and').fadeIn('slow').animate({
+      'opacity': 0.3
+      },
+      { duration: 2000, complete: function() { fadeInArrows(); } });
+  }
+  
+  function fadeInArrows(){    
+    $('#right').fadeIn('slow').animate({
+      'right': '-70px', 'opacity': 1
+      }, { duration: 2000, queue: false }, function() {
+        // Animation complete.
+    });
+
+    $('#left').fadeIn('slow').animate({
+      'left': '-70px', 'opacity': 1
+      }, { duration: 2000, complete: function() { dropDownMenu(); } } );
+  }
+  
+
+  function dropDownMenu(){
+    $('.menu').animate({
+      'top': 0
+    }, {duration: 'fast'});
+  }
   
 });
