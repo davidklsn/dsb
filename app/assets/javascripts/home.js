@@ -13,7 +13,6 @@ $(document).ready(function(){
   //Hide groups for animation privacy 
   //$('.init-hide').toggleClass('hidden');
 
-  //
   // @TODO Create animations for front and menu
   
   $('#group1').fadeIn('slow').animate({
