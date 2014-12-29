@@ -95,7 +95,10 @@
     z-index: 5; /* slide over group 2 */
   }
   #group1 .parallax__layer--base {
-    background: rgb(102,204,102);
+    background: white;
+    background-image: image_url('background.jpeg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
   }
 
   #group2 {
