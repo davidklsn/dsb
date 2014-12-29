@@ -36,13 +36,13 @@ $(document).ready(function(){
   
   function fadeInArrows(){    
     $('#right').fadeIn('slow').animate({
-      'right': '-70px', 'opacity': 1
+      'right': '-40px', 'opacity': 1
       }, { duration: 2000, queue: false }, function() {
         // Animation complete.
     });
 
     $('#left').fadeIn('slow').animate({
-      'left': '-70px', 'opacity': 1
+      'left': '-40px', 'opacity': 1
       }, { duration: 2000, complete: function() { dropDownMenu(); } } );
   }
   

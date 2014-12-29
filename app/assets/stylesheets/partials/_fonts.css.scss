@@ -13,6 +13,11 @@
     src: font-url('Castro_script.ttf');
 }
 
+@font-face {
+    font-family: 'Signerica';
+    src: font-url('Signerica_Fat.ttf');
+}
+
 .baron{
   font-family: 'Baron';
 }
@@ -23,4 +28,8 @@
 
 .castro{
   font-family: 'Castro';
+}
+
+.signerica{
+  font-family: 'Signerica';
 }
