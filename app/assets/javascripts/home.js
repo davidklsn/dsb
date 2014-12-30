@@ -24,8 +24,9 @@ $(document).ready(function(){
     $('.name').fadeIn('slow').animate({
       'opacity': 1,
       },
-      { duration: 2000, complete: function() { fadeInAnd(); fadeInArrows(); } });
+      { duration: 1700, complete: function() { /*fadeInAnd(); fadeInArrows();*/ } });
   }
+  setTimeout(function(){ fadeInAnd(); fadeInArrows(); }, 2100)
 
   function fadeInAnd(){
     $('.and').fadeIn('slow').animate({
