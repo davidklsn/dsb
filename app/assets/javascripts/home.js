@@ -3,7 +3,7 @@ $(document).ready(function(){
     $("a.fancybox").fancybox();
   });
 
-  $('#group1').fadeIn('slow').animate({
+  $('#s-och-d').fadeIn('slow').animate({
     'opacity': 1
     },
     { duration: 2000, complete: function() { fadeInNames(); } });
@@ -52,7 +52,7 @@ $(document).ready(function(){
       'opacity': 1
     }, { duration: 1500 })
 
-    $('html, body').animate({ scrollTop: $('#group2').offset().top }, 'slow');
+    $('html, body').animate({ scrollTop: $('#om-oss').offset().top }, 'slow');
   });
 
   $('.close').on('click', function(e){

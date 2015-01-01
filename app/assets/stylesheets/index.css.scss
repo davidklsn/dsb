@@ -168,11 +168,11 @@
     color: gray;
   }
  
-  #group1 {
+  #s-och-d {
     z-index: 5; /* slide over group 2 */
   }
 
-  #group1 {
+  #s-och-d {
     background-color: white;
     background-image: image_url('background.jpeg');
     background-position: 50% 50%;
@@ -180,32 +180,31 @@
     opacity: 0;
   }
 
-  #group2 {
+  #om-ss {
     z-index: 3; /* slide under groups 1 and 3 */
   }
-  #group2 {
+  #om-oss {
     background: $cream;
   }
 
-  #group3 {
+  #info {
     z-index: 4; /* slide over group 2 and 4 */
   }
-  #group3 {
+  #info {
     background: $green;
-
   }
 
-  #group4 {
+  #anmalan {
     z-index: 2; /* slide under group 3 and 5 */
   }
-  #group4 {
+  #anmalan {
     background: $cream;
   }
 
-  #group5 {
+  #hitta-hit {
     z-index: 3; /* slide over group 4 and 6 */
   }
-  #group5 {
+  #hitta-hit {
     background: $blue;
   } 
 
@@ -252,7 +251,7 @@
   font-family: 'Baron';
 }
 
-#group2 .images{
+#om-oss .images{
   width: 100%;
   height: auto;
   margin-top: 24px;
@@ -274,7 +273,7 @@
   }
 }
 
-#group2{
+#om-oss {
   .content{
     width: 780px;
   }
@@ -352,7 +351,7 @@
   }
 }
 
-#group4{
+#anmalan{
   form{
     margin-top: 20px;
   }
@@ -497,7 +496,7 @@
   }
 }
 
-#group5{
+#hitta-hit{
   .map{
     width: 300px; 
     height: 300px;

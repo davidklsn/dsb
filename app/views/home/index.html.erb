@@ -1,14 +1,14 @@
 <div class='menu' id='menu-center'> 
   <ul>
-    <li><a class='group1 menu-item active' href="#group1">S & D</a></li>
-    <li><a class='group2 menu-item scroll-item' href="#group2">Om oss</a></li>
-    <li><a class='group3 menu-item scroll-item' href="#group3">Info</a></li>
-    <li><a class='group4 menu-item scroll-item' href="#group4">Anmälan</a></li>
-    <li><a class='group5 menu-item scroll-item' href="#group5">Hitta hit</a></li>
+    <li><a class='s-och-d menu-item active' href="#s-och-d">S & D</a></li>
+    <li><a class='om-oss menu-item scroll-item' href="#om-oss">Om oss</a></li>
+    <li><a class='info menu-item scroll-item' href="#info">Info</a></li>
+    <li><a class='anmalan menu-item scroll-item' href="#anmalan">Anmälan</a></li>
+    <li><a class='hitta-hit menu-item scroll-item' href="#hitta-hit">Hitta hit</a></li>
   </ul> 
 </div>
 <div class="parallax">
-  <div id="group1" class="parallax__group">
+  <div id="s-och-d" class="parallax__group">
     <div class="parallax__layer parallax__layer--base">
       <div class="content">
         <%= image_tag 'arrow-left.png', class: 'arrow', id: 'left' %>
@@ -21,7 +21,7 @@
       </div>
     </div>
   </div>
-  <div id="group2" class="parallax__group init-hide">
+  <div id="om-oss" class="parallax__group init-hide">
       <div class='overlay hidden'>
         <div class='details hidden' id='martina'>
           <a href='#' class='close' id='martina-close'><%= image_tag 'close.png' %></a>
@@ -89,7 +89,7 @@ Vintern 2013 blev vänskapen till en romans och i början av 2014 blev de ett pa
         </div>
       </div>
   </div>
-  <div id="group3" class="parallax__group init-hide">
+  <div id="info" class="parallax__group init-hide">
     <div class="content">
       <h3 class='castro'>Vigseln</h3>
       <p>Vigseln tar plats i vackra Almesåkra kyrka utanför Nässjö kl. 14.00</br> Adress: Kyrkogatan 5 i Bodafors </p>
@@ -109,7 +109,7 @@ Vintern 2013 blev vänskapen till en romans och i början av 2014 blev de ett pa
 Om du ändå vill ge en gåva kan du välja mellan att ge ett bidrag till vår bröllopsresa eller skänka en gåva till Nkinga Mission Hospital i Tanzania (nkinga.se).</p>
     </div>
   </div>
-  <div id="group4" class="parallax__group init-hide">
+  <div id="anmalan" class="parallax__group init-hide">
     <div class="content">
       <p>Hej! Här anmäler du dig till bröllopet. Skriv fullständiga namn på samtliga i sällskapet. Skriv med eventuella allergier och annat vi kan behöva veta!</p>
       <%= form_for @attendance, url: { action: "create" }, html: { class: "nifty_form" }, remote: true do |f| %>
@@ -120,7 +120,7 @@ Om du ändå vill ge en gåva kan du välja mellan att ge ett bidrag till vår b
     </div>
   </div>
 
-  <div id="group5" class="parallax__group init-hide">
+  <div id="hitta-hit" class="parallax__group init-hide">
     <div class="content">
       <div class='map'>
         Karta
