@@ -3,18 +3,6 @@ $(document).ready(function(){
     $("a.fancybox").fancybox();
   });
 
-  function goToByScroll(id){
-    // Scroll
-    $('html, body').animate({ scrollTop: $('#' + id).offset().top }, 'slow');
-  }
-
-  $(".menu a").click(function(e) {
-    e.preventDefault();
-    goToByScroll($(this).attr('class'));   
-    $('.menu a').removeClass('active');
-    $(this).addClass('active');
-  });
-
   $('#group1').fadeIn('slow').animate({
     'opacity': 1
     },
@@ -73,11 +61,48 @@ $(document).ready(function(){
     var id = string.substr(0, string.indexOf('-'));
 
     $('#' + id).addClass('hidden');
-
     $('.text').css('opacity', '0');
-
-    
     $('.overlay').addClass('hidden');
   });
+
+  $('a[href^="#"]').on('click', function (e) {
+    e.preventDefault();
+    $(document).off("scroll");
+    
+    $('a').each(function () {
+        $(this).removeClass('active');
+    })
+    $(this).addClass('active');
   
+    var target = this.hash,
+        menu = target;
+    $target = $(target);
+    $('html, body').stop().animate({
+        'scrollTop': $target.offset().top+2
+    }, 500, 'swing', function () {
+        window.location.hash = target;
+        $(document).on("scroll", onScroll);
+    });
+  });
+
+  $(document).on("scroll", onScroll);
+    
+  function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    var menuItems = $('.menu-item');
+
+    menuItems.each(function (i, d) {
+        var id = $(d).attr('href');
+        var refElement = $(id);
+        
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#menu-center ul li a').removeClass("active");
+            $(d).addClass("active");
+        }
+        else{
+            $(d).removeClass("active");
+        }
+    });
+
+  }
 });
