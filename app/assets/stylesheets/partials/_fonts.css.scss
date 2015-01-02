@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: 'Canter-light';
+    src: font-url('Canter_Light.otf');
+}
+
+@font-face {
     font-family: 'Castro';
     src: font-url('Castro_script.ttf');
 }
@@ -18,6 +23,11 @@
     src: font-url('Signerica_Fat.ttf');
 }
 
+@font-face {
+    font-family: 'Helvetica';
+    src: font-url('HelveticaNeue-Thin.ttf');
+}
+
 .baron{
   font-family: 'Baron';
   color: #414042;
@@ -25,6 +35,11 @@
 
 .canter{
   font-family: 'Canter';
+  color: #414042;
+}
+
+.canter-light{
+  font-family: 'Canter-light';
   color: #414042;
 }
 

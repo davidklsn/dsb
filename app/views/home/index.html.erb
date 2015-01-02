@@ -29,7 +29,7 @@
             <%= image_tag 'jeyskyt.jpg'%>
           </div>
           <div class='text'>
-            <h4>Martina Eliasson</h4>
+            <h4 class='canter-light'>Martina Eliasson</h4>
             <p>Martina är tjejen med kreativa kollen. Till vardags arbetar hon som arkitekt och på sin fritid hittar hon på allt mellan himmel och jord.  Påhittig , supersnäll och tuff. </p>
         </div>
       </div>
@@ -39,7 +39,7 @@
             <%= image_tag 'rebecca.png'%>
           </div>
           <div class='text'>
-            <h4>Rebecca Zakrison</h4>
+            <h4 class='canter-light'>Rebecca Zakrison</h4>
             <p> Rebecca är Södermalms egen pangpingla. Med sina fluffiga pälsar intar hon både coola trend hak och sportiga pingisställen. På dagarna studerar hon en master inom socialt arbete ,  charmig och genuin.</p>
         </div>
       </div>
@@ -49,7 +49,7 @@
             <%= image_tag 'jeyskyt.jpg'%>
           </div>
           <div class='text'>
-            <h4>Simon Westerlund</h4>
+            <h4 class='canter-light'>Simon Westerlund</h4>
             <p>Simon är killen med kontrollen. Han har siktet inställd på rymden och studerar till farkostingenjör på KTH. Ambitiös, stort hjärta och stark!</p>
         </div>
        </div>
@@ -65,7 +65,7 @@ Sara och David blev först vänner på Afrikas slätter, de var 7st svenskar som
 Efter resan fortsatte vänskapen fast på olika håll, Sara flyttade till Göteborg och David bodde kvar i Stockholm. 
 Vintern 2013 blev vänskapen till en romans och i början av 2014 blev de ett par.  Den 22a juli förlovade de sig och den 23e maj 2015 blir det äkta makar , hurrey!        
         </p>
-      <h2 class='canter'>Värdarna</h2>
+      <h2 class='canter-light'>Värdarna</h2>
         <div class='hosts'>
           <div class='image-container' id='martina'>
             <div class='shader'></div>
@@ -90,20 +90,20 @@ Vintern 2013 blev vänskapen till en romans och i början av 2014 blev de ett pa
   </div>
   <div id="info" class="parallax__group init-hide">
     <div class="content">
-      <h3 class='canter' style='margin-top: -100px;'>Vigseln</h3>
+      <h3 class='canter-light' style='margin-top: -100px;'>Vigseln</h3>
       <p class='margin-bottom'>Vigseln tar plats i vackra Almesåkra kyrka utanför Nässjö kl. 14.00</br> Adress: Kyrkogatan 5 i Bodafors </p>
-      <h3 class='canter'>Festen</h3>
+      <h3 class='canter-light'>Festen</h3>
       <p class='margin-bottom'>Efter vigseln vill vi fira detta med dig och det gör vi ute på Blankefalls loge.  Där bjuds det på middag och festligheter hela kvällen lång!  </p>
-      <h3 class='canter'>Klädsel</h3>
+      <h3 class='canter-light'>Klädsel</h3>
       <p class='margin-bottom'>Kom som ditt snyggaste jag! Klädkod kavaj.</p>
-      <h3 class='canter'>Boende</h3>
+      <h3 class='canter-light'>Boende</h3>
       <p>Här är några tips på boende!</p>
-      <a href='http://www.hogland.se' target='_blank'>Hotell Högland</a>
-      <a href='http://www.pensionatparadis.nu/sv/' target='_blank'>Pensionat Paradis</a>
-      <a href='http://www.ullinge.se' target='_blank'>Hotell Ullinge</a>
-      <a href='http://www.eksjostadshotell.se' target='_blank'>Eksjö stadshotell</a>
-      <a class='last' href='http://www.eksjovandrarhem.se' target='_blank'>Eksjö vandrarhem</a>
-      <h3 class='canter margin-top'>Presenter</h3>
+      <a class='Canter-light' href='http://www.hogland.se' target='_blank'>Hotell Högland</a>
+      <a class='Canter-light' href='http://www.pensionatparadis.nu/sv/' target='_blank'>Pensionat Paradis</a>
+      <a class='Canter-light' href='http://www.ullinge.se' target='_blank'>Hotell Ullinge</a>
+      <a class='Canter-light' href='http://www.eksjostadshotell.se' target='_blank'>Eksjö stadshotell</a>
+      <a class='Canter-light' class='last' href='http://www.eksjovandrarhem.se' target='_blank'>Eksjö vandrarhem</a>
+      <h3 class='canter-light margin-top'>Presenter</h3>
       <p>Den stora presenten är att du kommer och förgyller vår dag. 
 Om du ändå vill ge en gåva kan du välja mellan att ge ett bidrag till vår bröllopsresa eller skänka en gåva till Nkinga Mission Hospital i Tanzania (nkinga.se).</p>
     </div>
@@ -114,7 +114,7 @@ Om du ändå vill ge en gåva kan du välja mellan att ge ett bidrag till vår b
       <%= form_for @attendance, url: { action: "create" }, html: { class: "nifty_form" }, remote: true do |f| %>
         <%= f.text_field :email, placeholder: 'Email' %>
         <%= f.text_area :body, size: "60x12", placeholder: 'Deltagare & Info' %>
-        <%= f.submit "Vi kommer!", class: 'button light center' %>
+        <%= f.submit "Vi kommer!", class: 'button light center submit' %>
       <% end %>
     </div>
   </div>

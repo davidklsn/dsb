@@ -11,7 +11,7 @@
   width: 100%;
   top: -44px;
   margin: 0 auto;
-  font-family: 'Canter';
+  font-family: 'Canter-light';
   font-size: 20px;
 
   ul {
@@ -153,19 +153,19 @@
   }
 
   p{ 
-    font-family: 'Baron';
+    font-family: 'Helvetica';
     font-size: 16px;
     color: $gray;
   }
 
   .content p, .content a{
-    font-family: 'baron';
+    font-family: 'Helvetica';
     font-size: 16px;
     color: $gray;
   }
 
   .content a{
-    font-family: 'Canter';
+    font-family: 'Canter-light';
     font-size: 26px;
     color: black;
   }
@@ -391,7 +391,7 @@
     padding: 20px;
     border: none;
     border-radius: 5px;
-    font-family: 'Baron';
+    font-family: 'baron';
     font-size: 16px;
     line-height: 1.5;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -409,6 +409,11 @@
 
   input{
     margin-bottom: 20px;
+  }
+
+  input.submit{
+    font-family: 'Canter-light';
+    font-size: 24px;
   }
 }
 
