@@ -23,7 +23,15 @@ and (max-device-width : 768px) {
     display: none !important;
  }
 
-  #s-och-d, #anmalan, #hitta-hit{
+  #s-och-d{
+    height: 700px;
+
+    .content{
+      top: 43%;
+    }
+  }
+
+  #anmalan, #hitta-hit{
     display: block;
     height: 900px;
   }
@@ -70,14 +78,20 @@ and (max-device-width : 768px) {
   }
 
   #info{
-    height: 1500px;
+    height: 1200px;
 
     .content{
       min-width: 0px !important;
       width: 85%;
       margin: 0 auto;
-      //padding: 20px;
     }
+
+    .content a{
+      display: block;
+      margin: 0px auto !important;
+      text-align: center;
+    }
+
 
   }
 
