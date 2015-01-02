@@ -40,13 +40,12 @@
   }
 
   a:hover {
-    //background-color: rgba(189,189,189, 0.8);
-    color: black;
+    color: $gray;
   }
 
   a.active{
-    //background-color: rgba(189,189,189, 0.8);
-    color: black;
+    color: $gray;
+    font-weight: bold;
   }
 
   li {
@@ -355,6 +354,20 @@
       height: 200px;
       border-radius: 100%;
     }    
+  }
+}
+
+#info{
+  .content{
+    min-width: 780px;
+
+    a{
+      margin-right: 36px;
+    }
+
+    a.last{
+      margin-right: 0px;
+    }
   }
 }
 

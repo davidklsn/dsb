@@ -7,7 +7,6 @@ class HomeController < ApplicationController
   def create
     byebug
 
-
     respond_to do |format|
       format.js
     end
