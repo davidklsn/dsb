@@ -1,4 +1,6 @@
 // Responsive design
+@import "partials/variables";
+@import "partials/fonts";
 
 // ipad
 @media only screen 
@@ -15,8 +17,32 @@ and (max-device-width : 768px) {
     -webkit-text-size-adjust: none;
     width: 100%;
   }
+
+  .selection{
+    display: block;
+  }
+
   .menu{
     display: none;
+    top: 100px;
+
+
+
+    ul{
+      width: 100%;
+
+      li{
+        display: block;
+        background-color: $cream;
+
+        a{
+          float: none;
+          margin-left: 20px;
+        }
+      }
+
+    }
+
   }
 
  .arrow{
@@ -95,8 +121,6 @@ and (max-device-width : 768px) {
       margin: 0px auto !important;
       text-align: center;
     }
-
-
   }
 
   #anmalan{
