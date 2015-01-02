@@ -32,7 +32,13 @@ $(document).ready(function(){
 
     $('#left').fadeIn('slow').animate({
       'left': '-40px', 'opacity': 1
-      }, { duration: 2000, complete: function() { dropDownMenu(); } } );
+      }, { duration: 2000, complete: function() { 
+
+        if($(window).width() > 768){
+          dropDownMenu(); 
+        }
+      
+      } } );
   }
   
   function dropDownMenu(){
@@ -40,6 +46,15 @@ $(document).ready(function(){
       'top': 0
     }, {duration: 'slow'});
   }
+
+  // mobile menu
+  $('.selection').on('click', function(e){
+    e.preventDefault();
+    
+    $('.menu').animate({
+      'top': 0
+    }, {duration: 'slow'});
+  })
 
   //popup hosts
   $('.image-container').on('click', function(e){

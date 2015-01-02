@@ -18,18 +18,24 @@ and (max-device-width : 768px) {
     width: 100%;
   }
 
+  .mobile-show{
+
+  }
+
   .selection{
     display: block;
   }
 
   .menu{
-    display: none;
-    top: 100px;
-
-
+    //display: none;
+    top: -280px;
 
     ul{
       width: 100%;
+
+      li:first-child{
+        padding-top: 55px;
+      }
 
       li{
         display: block;
