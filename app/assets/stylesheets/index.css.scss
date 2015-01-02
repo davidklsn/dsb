@@ -564,17 +564,31 @@
 }
 
 #hitta-hit{
+  .content{
+    width: 780px;
+    margin-top: -100px;
+  }
   .map{
-    width: 300px; 
+    width: 460px; 
     height: 300px;
     float: left;
     background-color: white;
+
+    img{
+      width: 100%;
+    }
+
   }
 
   .links{
-    width: 300px;
+    width: 270px;
     height: 300px;
     float: left;
+    margin-left: 42px;
+
+    p{
+      margin-bottom: 30px;
+    }
 
   }
 }

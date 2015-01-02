@@ -152,6 +152,7 @@ and (max-device-width : 687px) {
       margin: 0 auto;
     }
     .map{
+      float: none;
       width: 100%;
       img{
         width: 100%;
@@ -159,10 +160,12 @@ and (max-device-width : 687px) {
     }
 
     .links{
+      margin: 0 auto;
       margin-top: 40px;
       width: auto;
       height: auto;
       float: none !important;
+
     }
   }
 }
