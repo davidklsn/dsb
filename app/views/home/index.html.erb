@@ -3,7 +3,7 @@
     <li><a class='s-och-d menu-item active' href="#s-och-d">S & D</a></li>
     <li><a class='om-oss menu-item scroll-item' href="#om-oss">Om oss</a></li>
     <li><a class='info menu-item scroll-item' href="#info">Info</a></li>
-    <li><a class='anmalan menu-item scroll-item' href="#anmalan">Anmälan</a></li>
+    <li><a class='anmalan menu-item scroll-item' href="#anmalan">o.s.a</a></li>
     <li><a class='hitta-hit menu-item scroll-item' href="#hitta-hit">Hitta hit</a></li>
   </ul> 
 </div>
@@ -40,7 +40,7 @@
           </div>
           <div class='text'>
             <h4>Rebecca Zakrison</h4>
-            <p> Rebecca är Södermalms egen pangpingla. Med sina fluffiga pälsar intar hon både coola trend hak och sportiga pingisställen. På dagarna studerar hon en master inom ,  charmig och genuin.</p>
+            <p> Rebecca är Södermalms egen pangpingla. Med sina fluffiga pälsar intar hon både coola trend hak och sportiga pingisställen. På dagarna studerar hon en master inom socialt arbete ,  charmig och genuin.</p>
         </div>
       </div>
         <div class='details hidden' id='simon'>
@@ -50,7 +50,7 @@
           </div>
           <div class='text'>
             <h4>Simon Westerlund</h4>
-            <p>Simon är killen med kontrollen Han har siktet inställd på rymden och gör för tillfället sin master till farkostingenjör på KTH. Ambitiös, stort hjärta och stark!</p>
+            <p>Simon är killen med kontrollen. Han har siktet inställd på rymden och studerar till farkostingenjör på KTH. Ambitiös, stort hjärta och stark!</p>
         </div>
        </div>
 
@@ -59,7 +59,7 @@
         <div class='images' style='margin-bottom: 20px;'>
           <a class='fancybox'><%= image_tag 'bild.JPG' %></a>
         </div>
-        <p>
+        <p class='margin-bottom'>
 Sara och David blev först vänner på Afrikas slätter, de var 7st svenskar som via Bibelskola Sthlm åkte ut till Karen utanför Nairobi för att studera med de kenyanska studenterna 2012. De fyra månaderna bestod bland annat av slappa dagar på colleget, studiebesök i olika projekt, volleybollturneringar och byggande av enkla hus på landsbygden. 
 
 Efter resan fortsatte vänskapen fast på olika håll, Sara flyttade till Göteborg och David bodde kvar i Stockholm. 
@@ -90,12 +90,12 @@ Vintern 2013 blev vänskapen till en romans och i början av 2014 blev de ett pa
   </div>
   <div id="info" class="parallax__group init-hide">
     <div class="content">
-      <h3 class='canter'>Vigseln</h3>
-      <p>Vigseln tar plats i vackra Almesåkra kyrka utanför Nässjö kl. 14.00</br> Adress: Kyrkogatan 5 i Bodafors </p>
+      <h3 class='canter' style='margin-top: -100px;'>Vigseln</h3>
+      <p class='margin-bottom'>Vigseln tar plats i vackra Almesåkra kyrka utanför Nässjö kl. 14.00</br> Adress: Kyrkogatan 5 i Bodafors </p>
       <h3 class='canter'>Festen</h3>
-      <p>Efter vigseln vill vi fira detta med dig och det gör vi ute på Blankefalls loge.  Där bjuds det på middag och festligheter hela kvällen lång!  </p>
+      <p class='margin-bottom'>Efter vigseln vill vi fira detta med dig och det gör vi ute på Blankefalls loge.  Där bjuds det på middag och festligheter hela kvällen lång!  </p>
       <h3 class='canter'>Klädsel</h3>
-      <p>Kom som ditt snyggaste jag! Klädkod kavaj.</br> Kanske befinner sig din blivande man/kvinna i lokalen! Dress for success!</p>
+      <p class='margin-bottom'>Kom som ditt snyggaste jag! Klädkod kavaj.</p>
       <h3 class='canter'>Boende</h3>
       <p>Här är några tips på boende!</p>
       <a href='http://www.hogland.se' target='_blank'>Hotell Högland</a>
@@ -103,18 +103,18 @@ Vintern 2013 blev vänskapen till en romans och i början av 2014 blev de ett pa
       <a href='http://www.ullinge.se' target='_blank'>Hotell Ullinge</a>
       <a href='http://www.eksjostadshotell.se' target='_blank'>Eksjö stadshotell</a>
       <a class='last' href='http://www.eksjovandrarhem.se' target='_blank'>Eksjö vandrarhem</a>
-      <h3 class='canter'>Presenter</h3>
+      <h3 class='canter margin-top'>Presenter</h3>
       <p>Den stora presenten är att du kommer och förgyller vår dag. 
 Om du ändå vill ge en gåva kan du välja mellan att ge ett bidrag till vår bröllopsresa eller skänka en gåva till Nkinga Mission Hospital i Tanzania (nkinga.se).</p>
     </div>
   </div>
   <div id="anmalan" class="parallax__group init-hide">
     <div class="content">
-      <p>Hej! Här anmäler du dig till bröllopet. Skriv fullständiga namn på samtliga i sällskapet. Skriv med eventuella allergier och annat vi kan behöva veta!</p>
+      <p>Hej! Här anmäler du dig till bröllopet. Skriv fullständiga namn på samtliga i sällskapet. Skriv med eventuella allergier och annat vi kan behöva veta!</br> <span class='bold'>Anmäl dig senast 1 april.</span></p>
       <%= form_for @attendance, url: { action: "create" }, html: { class: "nifty_form" }, remote: true do |f| %>
         <%= f.text_field :email, placeholder: 'Email' %>
         <%= f.text_area :body, size: "60x12", placeholder: 'Deltagare & Info' %>
-        <%= f.submit "Anmäl", class: 'button light center' %>
+        <%= f.submit "Vi kommer!", class: 'button light center' %>
       <% end %>
     </div>
   </div>
