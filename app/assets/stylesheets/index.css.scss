@@ -142,20 +142,24 @@
 
   h1{
     font-family: 'Canter';
+    color: $gray;
   }
 
   h3, h4{
     font-family: 'Canter'; 
+    color: $gray;
   }
 
   p{ 
     font-family: 'Baron';
     font-size: 16px;
+    color: $gray;
   }
 
   .content p, .content a{
     font-family: 'baron';
     font-size: 16px;
+    color: $gray;
   }
 
   .content a{
@@ -254,18 +258,18 @@
 #om-oss .images{
   width: 100%;
   height: auto;
-  margin-top: 24px;
 
   a{
     overflow: hidden;
-    height: 181px;
-    width: 200px;
+    height: 269px;
+    width: 283px;
     display: inline-block;
     cursor: pointer;
+    border-radius: 100%;
   }
   
   img{
-    width: 240px;
+    width: 305px;
   }
 
   a:hover{
@@ -314,7 +318,7 @@
         top: 0;
         left: 0;
         opacity: 0.6;
-        background-color: black;
+        border-radius: 100%;
       }
     }
 
@@ -331,9 +335,9 @@
       }
       .shader{
         display: block;
+        background-color: black; 
       }
     }
-
 
     a{
       height: 200px;
@@ -346,7 +350,7 @@
     img{
       width: 200px;
       height: 200px;
-      opacity: 0.6;
+      border-radius: 100%;
     }    
   }
 }
@@ -492,7 +496,6 @@
       margin-top: 30px;
       opacity: 0;
     }
-
   }
 }
 

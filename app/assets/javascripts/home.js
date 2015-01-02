@@ -56,13 +56,13 @@ $(document).ready(function(){
   });
 
   $('.close').on('click', function(e){
-    e.preventDefault();
-    var string = $(this).attr('id');
-    var id = string.substr(0, string.indexOf('-'));
+    //e.preventDefault();
+    //var string = $(this).attr('id');
+    //var id = string.substr(0, string.indexOf('-'));
 
-    $('#' + id).addClass('hidden');
-    $('.text').css('opacity', '0');
-    $('.overlay').addClass('hidden');
+    //$('#' + id).addClass('hidden');
+    //$('.text').css('opacity', '0');
+    //$('.overlay').addClass('hidden');
   });
 
   $('a[href^="#"]').on('click', function (e) {
@@ -77,6 +77,7 @@ $(document).ready(function(){
     var target = this.hash,
         menu = target;
     $target = $(target);
+
     $('html, body').stop().animate({
         'scrollTop': $target.offset().top+2
     }, 500, 'swing', function () {
