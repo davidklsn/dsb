@@ -1,5 +1,70 @@
 // Responsive design
 
 // ipad
+@media only screen 
+and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
+
+}
 
 // mobile
+@media only screen and (max-width: 767px) {
+  .menu{
+    display: none;
+  }
+
+ .arrow{
+    display: none; 
+ }
+
+  #s-och-d, #anmalan, #hitta-hit{
+    display: block;
+    height: 900px;
+  }
+
+  #om-oss {
+    height: 900px;
+    display: block;
+
+    .fancybox{
+      height: 244px !important;
+      width: 244px !important;
+
+      img{
+        width: 250px;
+      }
+    }
+
+    p{
+      width: auto;
+    }
+
+    .hosts{
+      width: auto;
+    }
+
+    .image-container{
+      float: none !important;
+      margin: 0 auto;
+      margin-right: auto !important;
+      margin-bottom: 20px;
+    }
+
+    .content{
+      display: inline-block;
+      width: 80%;
+      margin: 0 auto;
+      min-width: auto;
+      padding: 0 20px;
+    }
+  }
+
+  #om-oss{
+    height: 1600px;
+  }
+
+  #info{
+    height: 1200px;
+  }
+
+
+}
