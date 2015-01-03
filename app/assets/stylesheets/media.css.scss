@@ -84,7 +84,7 @@ and (max-device-width : 767px) {
     height: 700px;
 
     .content{
-      top: 43%;
+      top: 60%;
     }
   }
 
@@ -137,16 +137,13 @@ and (max-device-width : 767px) {
   }
 
   #info{
-    height: 1200px;
+    height: 1150px;
 
     .content{
       min-width: 0px !important;
       width: 85%;
       margin: 0 auto;
       
-      h3:first-child{
-        margin-top: 100px !important;
-      }
     }
 
     .content a{

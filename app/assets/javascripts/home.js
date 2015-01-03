@@ -147,9 +147,9 @@ $(document).ready(function(){
             $(d).removeClass("active");
         }
     });
-
   }
 
+  // shitty orientation hack
   var start = $('#s-och-d');
   var map = $('#hitta-hit');
 
