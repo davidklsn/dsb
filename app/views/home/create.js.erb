@@ -1,0 +1,6 @@
+<% if @attendance.errors.any? %>
+  $('.errors').empty().append("<%= escape_javascript(render(:partial => 'errors')) %>");
+<% else %>
+
+<% end %>
+

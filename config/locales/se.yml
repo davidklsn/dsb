@@ -1,0 +1,18 @@
+sv:
+  activerecord:
+    attributes:
+      attendance:
+        email: "Mailaddressen"
+        body: 'Deltagare & info'
+    errors:
+      messages:
+        confirmation: "Lösenorden matchar inte"
+
+      models:
+        attendance:
+          attributes:
+            body:
+              blank: 'måste anges'
+            email:
+              blank: 'måste anges'
+              invalid: 'ser inte rätt ut'
