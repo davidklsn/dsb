@@ -5,6 +5,33 @@
   display: none;
 }
 
+.errors{
+  .error-list{
+    list-style-type: none;
+    li{
+      font-size: 18px;
+      font-family: 'baron';
+      background-color: #fc9272;
+      border-radius: 3px;
+      margin-bottom: 4px;
+
+    }
+  }
+
+  .success{
+    list-style-type: none;
+
+    li{
+      font-size: 18px;
+      font-family: 'baron';
+      background-color: $green;
+      padding: 10px;
+      border-radius: 3px;
+      margin-bottom: 4px;
+    }
+  }
+}
+
 .mobile{
   display: none;
 }

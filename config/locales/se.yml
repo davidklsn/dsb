@@ -16,3 +16,4 @@ sv:
             email:
               blank: 'måste anges'
               invalid: 'ser inte rätt ut'
+              taken: 'har redan använts'

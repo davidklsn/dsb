@@ -1,6 +1,10 @@
 <% if @attendance.errors.any? %>
   $('.errors').empty().append("<%= escape_javascript(render(:partial => 'errors')) %>");
 <% else %>
+  $('.errors').empty();
+  $('.errors').empty().append("<%= escape_javascript(render(:partial => 'confirm')) %>");
 
+  $('#attendance_email').val('');
+  $('#attendance_body').val('');
 <% end %>
 
