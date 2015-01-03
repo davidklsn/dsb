@@ -314,11 +314,11 @@
 
 #om-oss {
   .content{
-    width: 780px;
+    width: 700px;
   }
 
   .hosts{
-    width: 641px;
+    width: 100%;
     margin: 0 auto;
 
     .image-container{
@@ -326,7 +326,7 @@
       float: left;
       width: 200px;
       height: 200px;
-      margin-right: 20px;
+      margin-right: 40px;
       cursor: pointer;
 
       p{
@@ -356,6 +356,10 @@
         border-radius: 100%;
       }
     }
+    .image-container:first-child{
+      margin-left: 11px;
+    }
+
 
     .image-container:last-child{
       margin-right: 0px;
@@ -392,7 +396,7 @@
 
 #info{
   .content{
-    min-width: 780px;
+    min-width: 700px;
 
     a{
       margin-right: 36px;
@@ -535,7 +539,7 @@
   }
 
   .details{
-    width: 781px;
+    width: 70px;
     height: 300px;
     margin: auto;
     position: absolute;
@@ -565,11 +569,11 @@
 
 #hitta-hit{
   .content{
-    width: 780px;
+    width: 700px;
     margin-top: -100px;
   }
   .map{
-    width: 460px; 
+    width: 60%; 
     height: 300px;
     float: left;
     background-color: white;
@@ -581,10 +585,10 @@
   }
 
   .links{
-    width: 270px;
+    width: 37%;
     height: 300px;
     float: left;
-    margin-left: 42px;
+    margin-left: 3%;
 
     p{
       margin-bottom: 30px;
