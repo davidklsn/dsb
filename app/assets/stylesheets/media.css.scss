@@ -89,10 +89,18 @@ and (max-device-width : 767px) {
   }
 
   #anmalan, #hitta-hit{
-    display: block;
     height: 900px;
   }
 
+  #hitta-hit{
+    height: 700px;
+
+    .content{
+      #map{
+        margin-top: 100px;
+      }
+    }
+  }
   #om-oss {
     height: 900px;
     display: block;
