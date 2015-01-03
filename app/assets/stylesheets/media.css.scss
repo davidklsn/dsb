@@ -10,6 +10,12 @@ and (orientation : landscape) {
     height: 900px;
   }
 
+  #om-oss{
+    .overlay > .details{
+      top: -200px;
+    }
+  }
+
   #anmalan{
     input{
       -webkit-appearance: none;
@@ -17,7 +23,6 @@ and (orientation : landscape) {
       border-radius: 3px;
     }
   }
-
 }
 
 // ipad

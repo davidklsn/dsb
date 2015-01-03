@@ -83,13 +83,15 @@ $(document).ready(function(){
     e.preventDefault();
     var id = $(this).attr('id');
 
-    $('.overlay').removeClass('hidden');
-    $('#' + id).removeClass('hidden');
-    $('#' + id).find('.text').animate({
-      'opacity': 1
-    }, { duration: 1500 })
+    if($(window).width() >= 768){
+      $('.overlay').removeClass('hidden');
+      $('#' + id).removeClass('hidden');
+      $('#' + id).find('.text').animate({
+        'opacity': 1
+      }, { duration: 1500 })
 
-    $('html, body').animate({ scrollTop: $('#om-oss').offset().top }, 'slow');
+      $('html, body').animate({ scrollTop: $('#om-oss').offset().top }, 'slow');
+    }
   });
 
   $('.close').on('click', function(e){
