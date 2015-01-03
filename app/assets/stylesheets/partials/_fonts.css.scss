@@ -25,7 +25,7 @@
 
 @font-face {
     font-family: 'Helvetica';
-    src: font-url('HelveticaNeue-Thin.ttf');
+    src: font-url('HelveticaNeue_Thin.otf');
 }
 
 .baron{
@@ -50,5 +50,10 @@
 
 .signerica{
   font-family: 'Signerica';
+  color: #414042;
+}
+
+.helvetica{
+  font-family: 'Helvetica';
   color: #414042;
 }
