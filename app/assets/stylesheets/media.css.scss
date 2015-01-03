@@ -54,6 +54,20 @@ and (max-device-width : 767px) {
     width: 100%;
   }
 
+  .shader{
+    display: none !important;
+  }
+
+  .image-container{
+    height: auto !important;
+  }
+
+  .mobile{
+    display: block !important;
+    color: $gray !important;
+    position: relative !important;
+  }
+
   .selection{
     display: block;
   }
@@ -112,8 +126,7 @@ and (max-device-width : 767px) {
   }
   
   #om-oss {
-    height: 900px;
-    display: block;
+    height: 2240px;
     
     .content{
       margin-top: -20px !important;
@@ -154,9 +167,6 @@ and (max-device-width : 767px) {
     }
   }
 
-  #om-oss{
-    height: 1600px;
-  }
 
   #info{
     height: 1150px;
