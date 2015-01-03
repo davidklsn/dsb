@@ -90,6 +90,10 @@ and (max-device-width : 767px) {
 
   #anmalan, #hitta-hit{
     height: 900px;
+
+    p{
+      margin-top: -25px;
+    }
   }
 
   #hitta-hit{
@@ -101,9 +105,14 @@ and (max-device-width : 767px) {
       }
     }
   }
+  
   #om-oss {
     height: 900px;
     display: block;
+    
+    .content{
+      margin-top: -20px !important;
+    }
 
     .fancybox{
       height: 244px !important;
