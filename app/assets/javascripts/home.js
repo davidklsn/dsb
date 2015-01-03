@@ -35,7 +35,8 @@ $(document).ready(function(){
       'left': '-40px', 'opacity': 1
       }, { duration: 2000, complete: function() { 
 
-        if($(window).width() > 768){
+        console.log($(window).width());
+        if($(window).width() >= 768){
           dropDownMenu(); 
         }
         else{
