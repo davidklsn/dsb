@@ -149,4 +149,19 @@ $(document).ready(function(){
     });
 
   }
+
+  var start = $('#s-och-d');
+
+  start.css('width', $(window).outerWidth());
+  start.css('height', $(window).outerHeight());
+
+  // Listen for orientation changes
+  window.addEventListener("orientationchange", function() {
+    // Announce the new orientation number
+    var start = $('#s-och-d');
+
+    start.css('width', $(window).outerWidth());
+    start.css('height', $(window).outerHeight());
+
+  }, false);
 });

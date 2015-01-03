@@ -9,8 +9,12 @@ and (orientation : landscape) {
   #s-och-d, #om-oss, #info, #anmalan, #hitta-hit{
     height: 1200px;
   }
-    
+
+  #s-och-d{
+    height: 300px;
+  }
 }
+
 // ipad
 @media (max-width: 980px) {
   body{
@@ -64,9 +68,7 @@ and (max-device-width : 767px) {
           margin-left: 20px;
         }
       }
-
     }
-
   }
 
  .arrow{
