@@ -6,13 +6,18 @@
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
-  #s-och-d, #om-oss, #info, #anmalan, #hitta-hit{
-    height: 1200px;
+  #om-oss, #info, #anmalan {
+    height: 900px;
   }
 
-  #s-och-d{
-    height: 300px;
+  #anmalan{
+    input{
+      -webkit-appearance: none;
+      border-radius: 0;
+      border-radius: 3px;
+    }
   }
+
 }
 
 // ipad

@@ -151,9 +151,12 @@ $(document).ready(function(){
   }
 
   var start = $('#s-och-d');
+  var map = $('#hitta-hit');
 
   start.css('width', $(window).outerWidth());
   start.css('height', $(window).outerHeight());
+  map.css('width', $(window).outerWidth());
+  map.css('height', $(window).outerHeight());
 
   // Listen for orientation changes
   window.addEventListener("orientationchange", function() {
@@ -162,6 +165,8 @@ $(document).ready(function(){
 
     start.css('width', $(window).outerWidth());
     start.css('height', $(window).outerHeight());
+    map.css('width', $(window).outerWidth());
+    map.css('height', $(window).outerHeight());
 
   }, false);
 });
