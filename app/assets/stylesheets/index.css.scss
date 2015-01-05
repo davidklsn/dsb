@@ -5,6 +5,10 @@
   display: none;
 }
 
+.section{
+  min-height: 900px;
+}
+
 .errors{
   .error-list{
     list-style-type: none;
@@ -17,6 +21,7 @@
       margin-bottom: 4px;
     }
   }
+
 
   .success{
     list-style-type: none;
