@@ -4,7 +4,7 @@
   $('.errors').empty();
   $('.errors').empty().append("<%= escape_javascript(render(:partial => 'confirm')) %>");
 
-  setTimeout(function(){ $('.errors').empty(); }, 7000)
+  setTimeout(function(){ $('.errors').empty(); }, 30000);
 
   $('#attendance_email').val('');
   $('#attendance_body').val('');
