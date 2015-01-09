@@ -12,7 +12,6 @@ class HomeController < ApplicationController
         format.js
       end
     else
-
     end
   end
 
