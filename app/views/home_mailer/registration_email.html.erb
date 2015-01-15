@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Sara och Davids bröllop - Registrering</title>
+  <style type="text/css">
+  body, td { color:#000000; font-size:14px; font-family:Verdana,Helvetica,Arial; }
+  .divider { background-color:#555555; height:2px; }
+  #footer { font-size:11px; color:#555555; }
+  #footer a { color:#555555;}
+  </style>
+</head>
+<body>
+  <table>
+  <tr>
+    <td><a class="name">Hej <%= @attendance.email %> </a></td>
+  </tr>
+  <tr>   
+    <td><p><%= @attendance.body %></p></td>
+  </tr>
+  </table>
+  <div class="divider"></div>
+  <footer id="footer">
+    <div class="container">
+      <p>NTA - Naturvetenskap och teknik för alla | Org.nr. 769609-9550 | Postadress: c/o Kungl. Vetenskapsakademin, Box 50005, 104 05 Stockholm | Besöksadress och paket: Lilla Frescativägen 4A, 114 18 Stockholm<br><br>
+        <a href="http://www.ntaskolutveckling.se">http://www.ntaskolutveckling.se</a></p>
+    </div>
+  </footer>
+</body>
+</html>

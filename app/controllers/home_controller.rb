@@ -6,7 +6,7 @@ class HomeController < ApplicationController
 
   def create
     @attendance = Attendance.new( attendance_params )
-
+    
     if @attendance.save 
       respond_to do |format|
         format.js
