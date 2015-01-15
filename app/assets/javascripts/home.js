@@ -1,7 +1,4 @@
 $(document).ready(function(){
-  jQuery(function() {
-    $("a.fancybox").fancybox();
-  });
 
   $('#s-och-d').fadeIn('slow').animate({
     'opacity': 1
@@ -77,7 +74,6 @@ $(document).ready(function(){
     }
   })
   
-
   //popup hosts
   $('.image-container').on('click', function(e){
     e.preventDefault();
