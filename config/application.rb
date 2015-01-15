@@ -26,6 +26,6 @@ module Dsb
     config.assets.paths << "#{Rails.root}/app/assets/fonts"  
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
     config.action_mailer.delivery_method   = :postmark
-    config.action_mailer.postmark_settings = { :api_token => ENV['613462e5-f54a-47a8-bf28-ded834a4660d'] }
+    config.action_mailer.postmark_settings = { :api_key => '613462e5-f54a-47a8-bf28-ded834a4660d'  }
   end
 end
