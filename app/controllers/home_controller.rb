@@ -8,6 +8,7 @@ class HomeController < ApplicationController
     @attendance = Attendance.new( attendance_params )
     
     if @attendance.save 
+      HomeMailer.send_registration_email(@attendance).deliver
       respond_to do |format|
         format.js
       end
