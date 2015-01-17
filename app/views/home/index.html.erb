@@ -125,7 +125,7 @@ Om du ändå vill ge en gåva kan du välja mellan att ge ett bidrag till vår b
       <%= form_for @attendance, url: { action: "create" }, html: { class: "nifty_form" }, remote: true do |f| %>
         <%= f.text_field :email, placeholder: 'Email' %>
         <%= f.text_area :body, size: "60x12", placeholder: 'Deltagare & Info' %>
-        <%= f.submit "Vi kommer!", class: 'button light center submit loader' %>
+        <%= f.submit "Vi kommer!", class: 'button light center submit loader', data: { disable_with: "Laddar.." } %>
       <% end %>
     </div>
   </div>
