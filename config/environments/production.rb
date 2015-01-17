@@ -83,4 +83,15 @@ Rails.application.configure do
   # custom fonts
   config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
   config.assets.precompile += %w( .svg .eot .woff .ttf)
+  config.action_mailer.default_url_options = { host: 'saraochdavid.se'}
+
+  config.action_mailer.smtp_settings = {
+    :address   => "smtp.mandrillapp.com",
+    :port      => 587, # ports 587 and 2525 are also supported with STARTTLS
+    :enable_starttls_auto => true, # detects and uses STARTTLS
+    :user_name => "david@nocweb.se",
+    :password  => "X-95t5I0ZP67nYqfu3XrBg", # SMTP password is any valid API key
+    :authentication => 'login', # Mandrill supports 'plain' or 'login'
+    :domain => 'saraochdavid.se', # your domain to identify your server when connecting
+  } 
 end

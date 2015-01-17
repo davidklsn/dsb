@@ -614,3 +614,14 @@
 
   }
 }
+
+.loader{
+  background-repeat: no-repeat !important;
+  background-position: 64% center !important;
+  background-color: #999999;
+  padding-left:30px;
+}
+
+.loader-show{
+  background-image: image_url('icon-saving.gif') !important;
+}

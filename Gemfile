@@ -43,7 +43,4 @@ gem 'rails_12factor', group: :production
 gem "jquery-scrollto-rails"
 gem 'fancybox-rails'
 gem 'validates_email_format_of'
-
-gem 'mail'
-gem 'postmark'
-gem 'postmark-rails'
+gem 'mandrill-rails'

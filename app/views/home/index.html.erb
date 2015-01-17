@@ -120,12 +120,12 @@ Om du ändå vill ge en gåva kan du välja mellan att ge ett bidrag till vår b
   </div>
   <div id="anmalan" class="parallax__group init-hide section">
     <div class="content">
-      <p>Hej! Här anmäler du dig till bröllopet. Skriv fullständiga namn på samtliga i sällskapet. Skriv med eventuella allergier och annat vi kan behöva veta!</br> <span class='bold'>Anmäl dig senast 1 april.</span></p>
+      <p>Hej! Här anmäler du dig till bröllopet.</br> Skriv fullständiga namn på samtliga i sällskapet. </br>Skriv med eventuella allergier och annat vi kan behöva veta!</br> <span class='bold'>Anmäl dig senast 1 april.</span></p>
       <div class='errors'></div>
       <%= form_for @attendance, url: { action: "create" }, html: { class: "nifty_form" }, remote: true do |f| %>
         <%= f.text_field :email, placeholder: 'Email' %>
         <%= f.text_area :body, size: "60x12", placeholder: 'Deltagare & Info' %>
-        <%= f.submit "Vi kommer!", class: 'button light center submit' %>
+        <%= f.submit "Vi kommer!", class: 'button light center submit loader' %>
       <% end %>
     </div>
   </div>

@@ -173,5 +173,8 @@ $(document).ready(function(){
 
   }, false);
 
-  $('')
+  $('.submit').on('click', function(){
+    $(this).addClass('loader-show');
+  });
 });
+

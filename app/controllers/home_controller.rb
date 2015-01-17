@@ -7,13 +7,14 @@ class HomeController < ApplicationController
   def create
     @attendance = Attendance.new( attendance_params )
     
-    if @attendance.save 
-      HomeMailer.send_registration_email(@attendance).deliver
-      respond_to do |format|
-        format.js
-      end
-    else
-    end
+    HomeMailer.send_registration_email(@attendance).deliver
+    #if @attendance.save 
+      #HomeMailer.send_registration_email(@attendance).deliver
+      #respond_to do |format|
+        #format.js
+      #end
+    #else
+    #end
   end
 
 private

@@ -1,5 +1,5 @@
 class HomeMailer < ActionMailer::Base
-  default from: "from@example.com"
+  default from: "saraochdavid@brollop.se"
   
   def send_registration_email( attendance )
     @attendance = attendance
