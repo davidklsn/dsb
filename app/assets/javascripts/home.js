@@ -75,7 +75,7 @@ $(document).ready(function(){
   })
   
   //popup hosts
-  $('.image-container').on('click', function(e){
+  $('.image-container').on('click touchstart', function(e){
     e.preventDefault();
     var id = $(this).attr('id');
 
