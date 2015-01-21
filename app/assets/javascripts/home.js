@@ -74,10 +74,42 @@ $(document).ready(function(){
     }
   })
   
-  //popup hosts
-  $('.image-container').on('click touchstart', function(e){
+  $('.shader').on('click touchstart', function(e){
     e.preventDefault();
-    var id = $(this).attr('id');
+    var id = $(this).parent().attr('id');
+
+
+    if($(window).width() >= 768){
+      $('.overlay').removeClass('hidden');
+      $('#' + id).removeClass('hidden');
+      $('#' + id).find('.text').animate({
+        'opacity': 1
+      }, { duration: 1500 })
+
+      $('html, body').animate({ scrollTop: $('#om-oss').offset().top }, 'slow');
+    }
+  });
+
+  $('.first-name').on('click touchstart', function(e){
+    e.preventDefault();
+    var id = $(this).parent().attr('id');
+
+
+    if($(window).width() >= 768){
+      $('.overlay').removeClass('hidden');
+      $('#' + id).removeClass('hidden');
+      $('#' + id).find('.text').animate({
+        'opacity': 1
+      }, { duration: 1500 })
+
+      $('html, body').animate({ scrollTop: $('#om-oss').offset().top }, 'slow');
+    }
+  });
+
+  $('.last-name').on('click touchstart', function(e){
+    e.preventDefault();
+    var id = $(this).parent().attr('id');
+
 
     if($(window).width() >= 768){
       $('.overlay').removeClass('hidden');

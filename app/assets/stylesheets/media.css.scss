@@ -54,6 +54,14 @@ and (max-device-width : 767px) {
     width: 100%;
   }
 
+  .shader{
+    display: none;
+  }
+
+  .first-name, .last-name{
+    display: none !important;
+  }
+
   .errors{
     li{
       font-size: 12px !important;
