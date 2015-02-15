@@ -32,7 +32,6 @@ $(document).ready(function(){
       'left': '-40px', 'opacity': 1
       }, { duration: 2000, complete: function() { 
 
-        console.log($(window).width());
         if($(window).width() >= 768){
           dropDownMenu(); 
         }
@@ -77,7 +76,6 @@ $(document).ready(function(){
   $('.shader').on('click touchstart', function(e){
     e.preventDefault();
     var id = $(this).parent().attr('id');
-
 
     if($(window).width() >= 768){
       $('.overlay').removeClass('hidden');

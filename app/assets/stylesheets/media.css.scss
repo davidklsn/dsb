@@ -130,7 +130,7 @@ and (max-device-width : 767px) {
   }
 
   #hitta-hit{
-    height: 700px;
+    height: 550px;
 
     .content{
       #map{
@@ -183,7 +183,7 @@ and (max-device-width : 767px) {
 
 
   #info{
-    height: 1150px;
+    height: 1500px;
 
     .content{
       min-width: 0px !important;
@@ -245,4 +245,15 @@ and (max-device-width : 767px) {
   .loader{
     background-position: 74% center !important;
   }
+
+  .full{
+    width: 100%;
+  }
+
+  .account{
+    float: none !important;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
 }
+

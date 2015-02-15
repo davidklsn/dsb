@@ -13,6 +13,7 @@ class HomeController < ApplicationController
         format.js
       end
     else
+      ## Should maybe do something fun? 
     end
   end
 

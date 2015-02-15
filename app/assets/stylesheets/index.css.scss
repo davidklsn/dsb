@@ -249,6 +249,7 @@
   }
   #info {
     background: white;
+    min-height: 980px;
   }
 
   #anmalan {
@@ -625,3 +626,43 @@
 .loader-show{
   background-image: image_url('icon-saving.gif') !important;
 }
+
+.full{
+  position: relative;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.pull-right{
+  float: right;
+}
+
+.pull-left{
+  float: left;
+}
+
+.account{
+  background-color: $cream;
+  width: 210px;
+  padding: 10px;
+  border: 1px solid #f0f0f0;
+  border-radius: 2px;
+  margin-top: 20px;
+
+  p{
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
